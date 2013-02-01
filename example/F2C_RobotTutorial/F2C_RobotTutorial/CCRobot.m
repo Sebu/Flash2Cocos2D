@@ -18,11 +18,12 @@
         [self createCharacterFromXML:@"robot"];
         [self setDelegate:self];
 
-        [self playAnimation:@"static" loop:NO wait:NO];
-        [self playAnimation:@"static_move" loop:NO wait:YES];
+        [self playAnimation:@"static" loop:YES wait:NO];
+        [self playAnimation:@"static_move" loop:YES wait:YES];
+//        [self playAnimation:@"moving" loop:YES wait:NO];
 
-        wheel = [self getChildByName:@"wheel"];
-        [wheel setIgnoreRotation:YES];
+//        wheel = [self getChildByName:@"wheel"];
+//        [wheel setIgnoreRotation:YES];
     }
     
     return self;

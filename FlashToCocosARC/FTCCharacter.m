@@ -61,6 +61,7 @@
     self = [super init];
     if (self) {
         [self initProperties];
+ 
     }
     
     return self;
@@ -210,7 +211,8 @@
 
 -(void) addElement:(FTCSprite *)_element withName:(NSString *)_name atIndex:(int)_index
 {
-    [self addChild:_element z:_index];
+    [self addSublayer:_element];
+    [_element setZPosition:_index];
     
     
     [_element setName:_name];
@@ -222,7 +224,9 @@
 {
     int totalChildren = self.childrenTable.count;
     [self.childrenTable.allValues enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        [self reorderChild:obj z:totalChildren-idx];
+//        [self reorderChild:obj z:totalChildren-idx];
+        [self addSublayer:obj];
+        [obj setZPosition:totalChildren-idx];
     }];
 }
 
@@ -239,8 +243,12 @@
 
 -(void) scheduleAnimation
 {
-    [scheduler_ unscheduleAllSelectorsForTarget:self];
-    [scheduler_ scheduleSelector:@selector(handleScheduleUpdate:) forTarget:self interval:frameRate/1000 paused:NO];
+//    [scheduler_ unscheduleAllSelectorsForTarget:self];
+    if (self.timer)
+        [self.timer invalidate];
+    
+//    [scheduler_ scheduleSelector:@selector(handleScheduleUpdate:) forTarget:self interval:frameRate/1000 paused:NO];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(handleScheduleUpdate:) userInfo:nil repeats:YES];
 }
 
 -(void) createCharacterFromXML:(NSString *)_xmlfile onCharacterComplete:(void(^)())completeHandler
@@ -256,6 +264,12 @@
     
     if (onComplete)
         onComplete();
+}
+
+-(void) setScale:(float)scale
+{
+    CATransform3D transform = CATransform3DIdentity;
+    self.transform = CATransform3DScale(transform, scale, -scale, 1.0);
 }
 
 @end

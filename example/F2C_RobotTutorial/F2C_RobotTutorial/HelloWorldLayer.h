@@ -12,13 +12,13 @@
 #import "CCRobot.h"
 
 // HelloWorldLayer
-@interface HelloWorldLayer : CCLayer
+@interface HelloWorldLayer : CALayer
 {
     CCRobot *theRobot;
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child
-+(CCScene *) scene;
++(CALayer *) scene;
 -(void) pause;
 -(void) resume;
 -(void) doPlay:(CCMenuItemLabel *)item;

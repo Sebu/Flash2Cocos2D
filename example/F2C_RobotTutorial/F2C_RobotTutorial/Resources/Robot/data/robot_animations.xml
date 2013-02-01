@@ -157,16 +157,16 @@
       <Frame x="-4.50" y="-65.00" rotation="-45.000" index="9"/>
     </Part>
     <Part name="Wheel">
-      <Frame y="0.80" index="0"/>
-      <Frame y="0.80" index="1"/>
-      <Frame y="0.80" index="2"/>
-      <Frame y="0.80" index="3"/>
-      <Frame y="0.80" index="4"/>
-      <Frame y="0.80" index="5"/>
-      <Frame y="0.80" index="6"/>
-      <Frame y="0.80" index="7"/>
-      <Frame y="0.80" index="8"/>
-      <Frame y="0.80" index="9"/>
+      <Frame y="0.80" rotation="36.0" index="0"/>
+      <Frame y="0.80" rotation="70.0" index="1"/>
+      <Frame y="0.80" rotation="106.0" index="2"/>
+      <Frame y="0.80" rotation="140.0" index="3"/>
+      <Frame y="0.80"  rotation="176.0" index="4"/>
+      <Frame y="0.80" rotation="210.0" index="5"/>
+      <Frame y="0.80" rotation="246.0" index="6"/>
+      <Frame y="0.80" rotation="280.0" index="7"/>
+      <Frame y="0.80" rotation="316.0" index="8"/>
+      <Frame y="0.80" rotation="350.0" index="9"/>
     </Part>
   </Animation>
   <Animation name="moving" frameCount="21">
@@ -875,16 +875,16 @@
       <Frame x="8.05" y="-64.92" scaleX="0.999" scaleY="0.999" rotation="11.301" index="13"/>
     </Part>
     <Part name="Wheel">
-      <Frame y="0.80" index="0"/>
-      <Frame y="0.80" index="1"/>
-      <Frame y="0.80" index="2"/>
-      <Frame y="0.80" index="3"/>
-      <Frame y="0.80" index="4"/>
-      <Frame y="0.80" index="5"/>
-      <Frame y="0.80" index="6"/>
-      <Frame y="0.80" index="7"/>
-      <Frame y="0.80" index="8"/>
-      <Frame y="0.80" index="9"/>
+        <Frame y="0.80" rotation="36.0" index="0"/>
+        <Frame y="0.80" rotation="70.0" index="1"/>
+        <Frame y="0.80" rotation="106.0" index="2"/>
+        <Frame y="0.80" rotation="140.0" index="3"/>
+        <Frame y="0.80"  rotation="176.0" index="4"/>
+        <Frame y="0.80" rotation="210.0" index="5"/>
+        <Frame y="0.80" rotation="246.0" index="6"/>
+        <Frame y="0.80" rotation="280.0" index="7"/>
+        <Frame y="0.80" rotation="316.0" index="8"/>
+        <Frame y="0.80" rotation="350.0" index="9"/>
       <Frame y="0.80" index="10"/>
       <Frame y="0.80" index="11"/>
       <Frame y="0.80" index="12"/>

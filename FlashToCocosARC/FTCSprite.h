@@ -12,7 +12,7 @@
 
 @class  FTCCharacter;
 
-@interface FTCSprite : CCSprite 
+@interface FTCSprite : CALayer
 {
     CCNode          *debugDrawingNode;
     NSArray         *currentAnimationInfo;
@@ -25,7 +25,13 @@
 @property (unsafe_unretained) BOOL       ignoreScale;
 @property (unsafe_unretained) BOOL       ignoreAlpha;
 
+@property (nonatomic) float zRotation;
+@property (nonatomic) float xScale;
+@property (nonatomic) float yScale;
+
 @property (nonatomic, strong) NSMutableDictionary   *animationsArr;
+
++(FTCSprite*)spriteWithFile:(NSString*)name;
 
 // private
 -(void) setCurrentAnimation:(NSString *)_framesId forCharacter:(FTCCharacter *)_character;

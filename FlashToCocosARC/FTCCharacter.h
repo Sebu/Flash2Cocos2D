@@ -12,7 +12,7 @@
 
 @protocol FTCCharacterDelegate;
 
-@interface FTCCharacter : CCSprite
+@interface FTCCharacter : CALayer
 {
     NSArray                     *currentAnimEvent;
     
@@ -31,7 +31,7 @@
 @property (strong) NSMutableDictionary *childrenTable;
 @property (strong) NSMutableDictionary *animationEventsTable;
 @property float frameRate;
-
+@property NSTimer* timer;
 
 +(FTCCharacter *) characterFromXMLFile:(NSString *)_xmlfile;
 -(void) playAnimation:(NSString *)_animId loop:(BOOL)_isLoopable wait:(BOOL)_wait;
@@ -49,6 +49,9 @@
 -(int) getCurrentFrame;
 -(void) addElement:(FTCSprite *)_element withName:(NSString *)_name atIndex:(int)_index;
 -(void) reorderChildren;
+
+
+-(void)setScale:(float)scale;
 
 // private
 -(void) setFirstPose;

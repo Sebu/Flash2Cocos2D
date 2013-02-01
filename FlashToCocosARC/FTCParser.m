@@ -75,13 +75,14 @@
         // no support for sprite sheets yet
         FTCSprite *_sprite = nil;
         
-        if (textureSheetExists)
-            _sprite = [FTCSprite spriteWithSpriteFrameName:nImage];
-        else
+        if (textureSheetExists) {
+            //            _sprite = [FTCSprite spriteWithSpriteFrameName:nImage];
+        } else {
             _sprite = [FTCSprite spriteWithFile:nImage];
+        }
         
         // SET ANCHOR P
-        CGSize eSize = [_sprite boundingBox].size;
+        CGSize eSize = [_sprite frame].size;
         
         CGPoint aP = CGPointMake(nAX/eSize.width, (eSize.height - (-nAY))/eSize.height);        
         
