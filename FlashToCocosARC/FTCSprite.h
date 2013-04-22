@@ -12,7 +12,7 @@
 
 @class  FTCCharacter;
 
-@interface FTCSprite : CALayer
+@interface FTCSprite : NSObject
 {
     CCNode          *debugDrawingNode;
     NSArray         *currentAnimationInfo;
@@ -32,6 +32,18 @@
 @property (nonatomic, strong) NSMutableDictionary   *animationsArr;
 
 +(FTCSprite*)spriteWithFile:(NSString*)name;
+
+
+//override them
+-(void)setZPosition:(float)pos;
+-(void)setRotation:(float)angle;
+-(void)setScaleX:(float)scaleX andY:(float)scaleY;
+-(void)setPosition:(CGPoint)position;
+-(CGRect)frame;
+-(void)setAnchorPoint:(CGPoint)point;
+-(id)layer;
+
+
 
 // private
 -(void) setCurrentAnimation:(NSString *)_framesId forCharacter:(FTCCharacter *)_character;

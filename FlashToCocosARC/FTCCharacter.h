@@ -12,7 +12,7 @@
 
 @protocol FTCCharacterDelegate;
 
-@interface FTCCharacter : CALayer
+@interface FTCCharacter : NSObject
 {
     NSArray                     *currentAnimEvent;
     
@@ -51,7 +51,11 @@
 -(void) reorderChildren;
 
 
--(void)setScale:(float)scale;
+-(void)addChild:(FTCSprite*)child z:(int)index;
+-(void) setScale:(float)scale;
+-(void) setRotation:(float)angle;
+-(void) setPosition:(CGPoint)pos;
+
 
 // private
 -(void) setFirstPose;

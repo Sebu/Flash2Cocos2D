@@ -72,6 +72,8 @@
 		63848D3F1636C86600D6E96D /* robotcharactermc_ShoulderR.png in Resources */ = {isa = PBXBuildFile; fileRef = 63848D211636C86500D6E96D /* robotcharactermc_ShoulderR.png */; };
 		63848D401636C86600D6E96D /* robotcharactermc_Wheel-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 63848D221636C86500D6E96D /* robotcharactermc_Wheel-hd.png */; };
 		63848D411636C86600D6E96D /* robotcharactermc_Wheel.png in Resources */ = {isa = PBXBuildFile; fileRef = 63848D231636C86500D6E96D /* robotcharactermc_Wheel.png */; };
+		8023D76916BD76FB00A5E904 /* CACharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8023D76816BD76FB00A5E904 /* CACharacter.m */; };
+		8023D76C16BFB85A00A5E904 /* CASprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 8023D76B16BFB85A00A5E904 /* CASprite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -156,6 +158,10 @@
 		638D7090166C012B00E6BE7E /* FTCParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTCParser.h; path = ../../../FlashToCocosARC/FTCParser.h; sourceTree = "<group>"; };
 		638D7091166C012B00E6BE7E /* FTCSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTCSprite.h; path = ../../../FlashToCocosARC/FTCSprite.h; sourceTree = "<group>"; };
 		686ED183BE17470FB2C92EAC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		8023D76716BD76FB00A5E904 /* CACharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CACharacter.h; path = ../../../FlashToCocosARC/CACharacter.h; sourceTree = "<group>"; };
+		8023D76816BD76FB00A5E904 /* CACharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CACharacter.m; path = ../../../FlashToCocosARC/CACharacter.m; sourceTree = "<group>"; };
+		8023D76A16BFB85A00A5E904 /* CASprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASprite.h; sourceTree = "<group>"; };
+		8023D76B16BFB85A00A5E904 /* CASprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASprite.m; sourceTree = "<group>"; };
 		ECF18101D5D34F2D98DFA5BE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -279,6 +285,10 @@
 				631964501664D113007633EA /* FTCFrameInfo.m */,
 				631964511664D113007633EA /* FTCParser.m */,
 				631964521664D113007633EA /* FTCSprite.m */,
+				8023D76716BD76FB00A5E904 /* CACharacter.h */,
+				8023D76816BD76FB00A5E904 /* CACharacter.m */,
+				8023D76A16BFB85A00A5E904 /* CASprite.h */,
+				8023D76B16BFB85A00A5E904 /* CASprite.m */,
 			);
 			name = libs;
 			sourceTree = "<group>";
@@ -528,6 +538,8 @@
 				631964571664D113007633EA /* FTCFrameInfo.m in Sources */,
 				631964581664D113007633EA /* FTCParser.m in Sources */,
 				631964591664D113007633EA /* FTCSprite.m in Sources */,
+				8023D76916BD76FB00A5E904 /* CACharacter.m in Sources */,
+				8023D76C16BFB85A00A5E904 /* CASprite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,6 +739,7 @@
 				632BD094166D18AE00677696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

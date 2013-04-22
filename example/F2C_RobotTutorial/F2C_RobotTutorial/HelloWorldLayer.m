@@ -30,10 +30,10 @@
 	if( (self=[super init])) {
 		
         theRobot = [[CCRobot alloc] init];
-        [theRobot setPosition:ccp(160, 310)];
+        [theRobot setPosition:CGPointMake(160, 310)];
         [theRobot setScale:2.0f];
         
-        [self addSublayer:theRobot];
+        [self addSublayer:theRobot.caLayer];
         
             
 	

@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FTCCharacter.h"
+#import "CACharacter.h"
 
-@interface CCRobot : FTCCharacter <FTCCharacterDelegate>
+@interface CCRobot : CACharacter <FTCCharacterDelegate>
 {
     FTCSprite   *wheel;
 }
